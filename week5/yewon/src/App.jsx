@@ -1,10 +1,11 @@
-import { HocModalContainer, CompoundModal } from "./components";
+import { HocModalContainer, CompoundModal, BasicModal } from "./components";
 
 function App() {
   return (
     <div>
       <HocModalContainer />
       <CompoundModal />
+      <BasicModal />
     </div>
   );
 }

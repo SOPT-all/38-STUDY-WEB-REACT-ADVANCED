@@ -1,9 +1,10 @@
-import { HocModalContainer } from "./components";
+import { HocModalContainer, CompoundModal } from "./components";
 
 function App() {
   return (
     <div>
       <HocModalContainer />
+      <CompoundModal />
     </div>
   );
 }

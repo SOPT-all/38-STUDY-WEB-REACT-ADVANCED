@@ -1,8 +1,9 @@
 import { HocModalContainer, CompoundModal, BasicModal } from "./components";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="container">
       <HocModalContainer />
       <CompoundModal />
       <BasicModal />

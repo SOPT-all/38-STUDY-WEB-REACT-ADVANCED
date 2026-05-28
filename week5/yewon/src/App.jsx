@@ -1,13 +1,11 @@
-import './App.css'
+import { HocModalContainer } from "./components";
 
 function App() {
   return (
-    <>
-      <div className="App">
-        <h1>week5-yewon</h1>
-      </div>
-    </>
-  )
+    <div>
+      <HocModalContainer />
+    </div>
+  );
 }
 
-export default App
+export default App;

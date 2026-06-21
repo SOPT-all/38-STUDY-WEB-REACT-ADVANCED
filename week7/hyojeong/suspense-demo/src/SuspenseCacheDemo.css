@@ -1,0 +1,127 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.scd-app {
+  min-height: 100vh;
+  background: #0f1115;
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+.scd-card {
+  width: 100%;
+  max-width: 560px;
+  background: #181b20;
+  border: 1px solid #2a2f38;
+  border-radius: 14px;
+  padding: 28px;
+}
+.scd-title {
+  font-size: 1.05rem;
+  margin: 0 0 4px;
+  color: #f3f4f6;
+}
+.scd-sub {
+  font-size: 0.8rem;
+  color: #9aa3af;
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+.scd-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: #1f232a;
+  border: 1px solid #2a2f38;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+.scd-toggle input {
+  accent-color: #2dd4bf;
+  width: 16px;
+  height: 16px;
+}
+.scd-mode-pill {
+  margin-left: auto;
+  font-size: 0.7rem;
+  padding: 2px 9px;
+  border-radius: 999px;
+}
+.scd-mode-pill.broken { background: rgba(248, 113, 113, 0.15); color: #f87171; }
+.scd-mode-pill.fixed  { background: rgba(74, 222, 128, 0.15); color: #4ade80; }
+
+.scd-badge-row {
+  font-size: 0.82rem;
+  color: #9aa3af;
+  margin-bottom: 14px;
+}
+.scd-badge {
+  background: #1f232a;
+  border: 1px solid #2a2f38;
+  color: #2dd4bf;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+}
+
+.scd-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.scd-buttons button {
+  flex: 1;
+  background: #1f232a;
+  border: 1px solid #2a2f38;
+  color: #e5e7eb;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.scd-buttons button:hover { border-color: #2dd4bf; color: #2dd4bf; }
+
+.scd-result {
+  border-top: 1px dashed #2a2f38;
+  padding-top: 16px;
+  min-height: 28px;
+}
+.scd-fallback {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #fbbf24;
+  font-size: 0.82rem;
+}
+.scd-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fbbf24;
+  animation: scd-pulse 0.9s ease-in-out infinite;
+}
+@keyframes scd-pulse {
+  0%, 100% { opacity: 0.3; transform: scale(0.85); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+.scd-data {
+  color: #d1d5db;
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+.scd-data b { color: #2dd4bf; }
+.scd-error { color: #f87171; font-size: 0.82rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .scd-dot { animation: none; }
+}
